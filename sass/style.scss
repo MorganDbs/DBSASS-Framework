@@ -1,0 +1,126 @@
+@import "mixin/_grid.scss";
+@import "mixin/_btn.scss";
+@import "mixin/_breadcrumb.scss";
+@import "mixin/_navbar.scss";
+@import "mixin/_page.scss";
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h2{
+    font-size: 25px;
+    padding-left: .65em;
+}
+.row {
+    @include row;
+
+    @for $i from 1 through 12 {
+        .col-m-#{$i} {
+            @include col($i, "m");
+        }
+
+        .col-l-#{$i} {
+            @include col($i, "l");
+        }
+    }
+
+    @for $i from 1 through 12 {
+        .offl-#{$i} {
+            @include offsetleft($i);
+        }
+    }
+
+    @for $i from 1 through 12 {
+        .offr-#{$i} {
+            @include offsetright($i);
+        }
+    }
+
+    .btn {
+        button {
+            @include btnstruct;
+        }
+
+        .btn-default {
+            @include btncolor(#1F1F1F);
+        }
+
+        .disabled{
+            @include disabled;
+        }
+
+        .btn-red {
+            @include btncolor(#F03434);
+        }
+
+        .btn-blue {
+            @include btncolor(#446CB3);
+        }
+
+        .btn-green {
+            @include btncolor(#3FC380);
+        }
+
+        .btn-purple {
+            @include btncolor(#947CB0);
+        }
+
+        .btn-orange {
+            @include btncolor(#EF4836);
+        }
+
+    }
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.breadcrumb {
+    @include breadcrumb;
+}
+
+.menu{
+    @include navbar;
+}
+
+.fa-bars{
+    margin-left: 90%;
+    cursor: pointer;
+}
+
+.code {
+    background-color: #2f3036;
+    color: white;
+    margin-bottom: 20px;
+
+    pre {
+        padding: 10px;
+    }
+}
+
+footer{
+    .liste-page{
+        @include page;
+    }
+    .tiny{
+        font-size: 10px;
+        margin-left: 1em;
+    }
+}

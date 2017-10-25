@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://use.fontawesome.com/d930a4dafe.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <header>
+    <div class="menu">
+      <label for="show-menu" class="show-menu "><i class="fa fa-bars" aria-hidden="true"></i></label>
+      <input type="checkbox" id="show-menu" role="button">
+      <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">About</a>
+          <ul class="dropdown">
+            <li><a href="#">qds</a></li>
+            <li><a href="#">qdsqdsqs</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+          <ul class="dropdown">
+            <li><a href="#">bla</a></li>
+            <li><a href="#">Deqdslksign</a></li>
+            <li><a href="#">qsdqsd</a></li>
+          </ul>
+        </li>
+        <li><a href="#">News</a></li>
+      </ul>
+    </div>
+    <ul class="breadcrumb">
+      <li><a href="#">You</a></li>
+      <li><a href="#">Are</a></li>
+      <li>Here</li>
+    </ul>
+  </header>
+  <body>
+    <div class="row">
+      <h2>
+      Grid composition
+      </h2>
+      <article class="col-l-2 offr-1">
+        <h3>This element is 2 column large with 1 right offset</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
+      </article>
+      <article class="col-m-5">
+        <h3>This element is 5 column large</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
+      </article>
+      <article class="col-m-2 offl-2">
+        <h3>This element is 2 column large with 2 left offset</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
+      </article>
+    </div>
+    <div class="row">
+      <h2>Type of button</h2>
+      <div class="col-l-12">
+        <div class="btn">
+          <button class="btn-default">
+          <a href="#"> <span>Default button</span></a>
+          </button>
+          <button class="btn-default disabled">
+          <a href="#"> <span>Disabled button</span></a>
+          </button>
+          <button class="btn-red">
+          <a href="#"> <span>Red button</span></a>
+          </button>
+          <button class="btn-blue">
+          <a href="#"> <span>Blue button</span></a>
+          </button>
+          <button class="btn-green">
+          <a href="#"> <span>Green button</span></a>
+          </button>
+          <button class="btn-purple">
+          <a href="#"> <span>Purple button</span></a>
+          </button>
+          <button class="btn-orange">
+          <a href="#"> <span>Orange button</span></a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <article class="col-l-4">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
+        <div class="btn align-left">
+          <button class="btn-default">
+          <a href="#"> <span>Left align button</span></a>
+          </button>
+        </div>
+      </article>
+      <article class="col-l-4">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
+        <div class="btn align-center">
+          <button class="btn-default">
+          <a href="#"> <span>Center align button</span></a>
+          </button>
+        </div>
+      </article>
+      <article class="col-l-4">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
+        <div class="btn align-right">
+          <button class="btn-default">
+          <a href="#"> <span>Right button</span></a>
+          </button>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <h2>Code section</h2>
+      <div class="col-l-12">
+        <section class="code">
+            <pre class="code">
+                function creerMult(n,x) {
+                  if (typeof x !== 'undefined') return n*x;
+                  return (v) =>  n*v;
+                }
+                let x7 = creerMult(7);
+                console.log( x7(7) );
+          </pre>
+        </section>
+      </div>
+    </div>
+  </body>
+  <footer>
+  <ul class="liste-page">
+    <li><a href="#"><<</a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">>></a></li>
+  </ul>
+
+  <p class="tiny">
+  <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, facilis, quis.
+    Excepturi facilis fuga impedit modi odio sed sint voluptatum!</small>
+  </p>
+
+</footer>
+</html>

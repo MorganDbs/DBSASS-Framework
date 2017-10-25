@@ -1,0 +1,39 @@
+@mixin btnstruct {
+    width: auto;
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+    line-height: 1.25;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@mixin btncolor($bgcolor: #4183D7) {
+    background-color: white;
+    border: 1px solid $bgcolor;
+    transition: background-color .35s ease;
+
+    a {
+        color: $bgcolor;
+        line-height: 0px;
+        text-decoration: none;
+    }
+
+    &:hover {
+        background-color: $bgcolor;
+        border: 1px solid $bgcolor;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+@mixin disabled(){
+    cursor: not-allowed;
+    a{
+        cursor: not-allowed;
+    }
+}
