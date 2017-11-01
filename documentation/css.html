@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DBSASS - CSS</title>
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <script src="https://use.fontawesome.com/d930a4dafe.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap|Cabin+Condensed|Didact+Gothic|Monoton|Open+Sans|Quicksand|Roboto|Ubuntu" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="src/css/highlight.min.css">
+  </head>
+  <header>
+    <div class="menu">
+      <label for="show-menu" class="show-menu "><i class="fa fa-bars" aria-hidden="true"></i></label>
+      <input type="checkbox" id="show-menu" role="button">
+      <ul id="menu">
+        <div class="logo">
+          <li><a href="index.html">DBSASS</a></li>
+        </div>
+          <div class="items">
+            <li>
+              <a href="sass.html">Sass</a>
+             <ul class="dropdown">
+              <li><a href="sass.html#slidegrille">Grille</a></li>
+              <li><a href="sass.html#slideariane">Fil d'ariane</a></li>
+              <li><a href="sass.html#slidebouton">Boutons</a></li>
+              <li><a href="sass.html#slideformulaire">Formulaire</a></li>
+              <li><a href="sass.html#slidegalerie">Galerie</a></li>
+              <li><a href="sass.html#slideban">Banniere</a></li>
+              <li><a href="sass.html#slidemenu">Menu</a></li>
+              <li><a href="sass.html#slidepagination">Pagination</a></li>
+              <li><a href="sass.html#slidetableau">Tableau</a></li>
+              <li><a href="sass.html#slidetypo">Typographie</a></li>
+            </ul>
+            </li>
+            <li><a href="#top" class="active">Css</a>
+            <ul class="dropdown">
+              <li><a href="#slidegrille">Grille</a></li>
+              <li><a href="#slideariane">Fil d'ariane</a></li>
+              <li><a href="#slidebouton">Boutons</a></li>
+              <li><a href="#slideformulaire">Formulaire</a></li>
+              <li><a href="#slidegalerie">Galerie</a></li>
+              <li><a href="#slideban">Banniere</a></li>
+              <li><a href="#slidemenu">Menu</a></li>
+              <li><a href="#slidepagination">Pagination</a></li>
+              <li><a href="#slidetableau">Tableau</a></li>
+              <li><a href="#slidetypo">Typographie</a></li>
+            </ul>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div id="top" class="ban">
+      <div class="title">
+        Documentation CSS
+        <div class="description">
+          Voici la documentation pour la version css du framework DBSASS.
+        </div>
+          <div class="btn-pre">
+              <button class="btn-default">
+              <a href="src/sources/dbsass-css-version.zip">Télécharger la version CSS</a>
+              </button>
+            </div>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="bloc">
+      <div id="slidegrille" class="row">
+        <div class="presentation">
+          <div class="partie">
+            <h2>Grille</h2>
+
+            <p class="justify">
+              La grille est une grille responsive composée de 12 colones. Sur des ecrans de tablette, les colonnes se redimensionneront soit à 50% soit à 100% en fonction de la classe choisi. Il est également possible de sauté des colones grace à des offsets. Vous pouvez redimenssionez votre navigateur web pour voir le comportement des colones.
+            </p>
+
+            <h3>Html</h3>
+
+            <p>
+              La structure html à respecté est la suivante :
+            </p>
+
+<pre>
+  <code data-language="html">
+  <div class="row">
+    <div class="col-l-8 offl-2 offr-2">
+      contenu
+    </div>
+  </div>
+  </code>
+</pre>
+          <h3>Exemples</h3>
+          <p>
+            Vous trouverez en dessous des exemples qui montrent toutes les classes possibles et ainsi les layouts pour la grille.
+          </p>
+          <h4>Classes de la grille large</h4>
+          <div class="row">
+            <div class="col-l-12">.col-l-12</div>
+            <div class="col-l-1">.col-l-1</div>
+            <div class="col-l-11">.col-l-11</div>
+            <div class="col-l-2">.col-l-2</div>
+            <div class="col-l-10">.col-l-10</div>
+            <div class="col-l-3">.col-l-3</div>
+            <div class="col-l-9">.col-l-9</div>
+            <div class="col-l-4">.col-l-4</div>
+            <div class="col-l-8">.col-l-8 </div>
+            <div class="col-l-5">.col-l-5</div>
+            <div class="col-l-7">.col-l-7 </div>
+            <div class="col-l-6">.col-l-6</div>
+            <div class="col-l-6 blue">.col-l-6 </div>
+          </div>
+
+          <h4>Classes de la grille medium</h4>
+          <div class="row">
+            <div class="col-m-12">.col-m-12</div>
+            <div class="col-m-1">.col-m-1</div>
+            <div class="col-m-11">.col-m-11</div>
+            <div class="col-m-2">.col-m-2</div>
+            <div class="col-m-10">.col-m-10</div>
+            <div class="col-m-3">.col-m-3</div>
+            <div class="col-m-9">.col-m-9</div>
+            <div class="col-m-4">.col-m-4</div>
+            <div class="col-m-8">.col-m-8 </div>
+            <div class="col-m-5">.col-m-5</div>
+            <div class="col-m-7">.col-m-7 </div>
+            <div class="col-m-6">.col-m-6</div>
+            <div class="col-m-6 blue">.col-m-6 </div>
+
+          </div>
+
+          <h4>Ajouter des offsets</h4>
+          <div class="row">
+            <div class="col-m-12">.col-m-12</div>
+             <div class="col-l-3 offr-3">.col-l-3 .offr-3</div>
+             <div class="col-m-3 offl-3 blue">.col-m-3 .offl-3</div>
+            <div class="col-m-12">.col-m-12 </div>
+          </div>
+        </div>
+
+        <h4>Layout mixé</h4>
+        <p>
+          Vous pouvez bien entendu mixé toutes ces classes pour créer le layout que vous souhaitez.
+        </p>
+
+        <div class="row">
+            <div class="col-l-12">.col-l-12</div>
+             <div class="col-m-3 offr-3">.col-l-3 .offr-3</div>
+             <div class="col-m-5 offl-1 yellow">.col-l-5 .offl-1</div>
+              <div class="col-m-8">.col-m-8 </div>
+              <div class="col-m-2 offr-2">.col-m-2 .offr-2</div>
+          </div>
+      </div>
+    </div>
+    <div id="slideariane" class="row bg-grey ">
+      <div class="presentation">
+          <div class="partie">
+            <h2>Fil d'ariane</h2>
+            <p>
+              Le fil d'ariane est un outil de navigation pour l'utilisateur. Ca lui permet de se repérer parmis les pages par lesquelles il est passé pour en arrivé la.
+            </p>
+            <h3>
+              Html
+            </h3>
+<pre>
+  <code data-language="html">
+  <ul class="breadcrumb">
+    <li><a href="#">Vous</a></li>
+    <li><a href="#">Etes</a></li>
+    <li>Ici</li>
+  </ul>
+  </code>
+</pre>
+            <h3>
+              Exemple
+            </h3>
+            <ul class="breadcrumb">
+              <li><a href="#">Vous</a></li>
+              <li><a href="#">Etes</a></li>
+              <li>Ici</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    <div id="slidebouton" class="row">
+      <div class="presentation">
+          <div class="partie">
+            <h2>Boutons</h2>
+            <p>
+              Voici les boutons du framework avec 6 classes prédéfinies convenant à toutes les situations.
+            </p>
+            <h3>
+              Html
+            </h3>
+<pre>
+  <code data-language="html">
+  <div class="btn">
+    <button class="btn-default">
+      <a href="#">Bouton</a>
+    </button>
+  </div>
+  </code>
+</pre>
+            <h3>
+              Exemples
+            </h3>
+            <div class="btn">
+              <button class="btn-default">
+              <a href="#">.btn-default</a>
+              </button>
+              <button class="btn-default disabled">
+              <a href="#">.btn-default .disabled</a>
+              </button>
+              <button class="btn-red">
+              <a href="#">.btn-red</a>
+              </button>
+              <button class="btn-blue">
+              <a href="#">.btn-blue</a>
+              </button>
+              <button class="btn-green">
+              <a href="#">.btn-green</a>
+              </button>
+              <button class="btn-purple">
+              <a href="#">.btn-purple</a>
+              </button>
+              <button class="btn-orange">
+              <a href="#">.btn-orange</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="slideformulaire" class="row bg-grey">
+        <div class="presentation">
+          <div class="partie">
+            <h2>Formulaire</h2>
+              <p>
+                Voici le formulaire responsive du framework.
+              </p>
+            <h3>
+              Html
+            </h3>
+<pre>
+  <code data-language="html">
+  <div class="form">
+    <form action="">
+      <div class="line">
+        <label>Nom</label>
+        <input type="text" name="nom" placeholder="Votre nom...">
+      </div>
+      <div class="line">
+        <label>Prenom</label>
+        <input type="text" name="prenom" placeholder="Votre prenom...">
+      </div>
+      <div class="line">
+        <label>Sexe</label>
+         <select name="sexe">
+            <option selected="selected">Choisir</option>
+            <option value="Homme">Homme</option>
+            <option value="Femme">Femme</option>
+        </select>
+      </div>
+    </form>
+  </div>
+  </code>
+</pre>
+          <h3>
+            Exemple
+          </h3>
+          <div class="form">
+              <form action="">
+                <div class="line">
+                  <label>Nom</label>
+                  <input type="text" name="nom" placeholder="Votre nom...">
+                </div>
+                <div class="line">
+                  <label>Prenom</label>
+                  <input type="text" name="prenom" placeholder="Votre prenom...">
+                </div>
+                <div class="line">
+                  <label>Sexe</label>
+                  <select name="sexe">
+                    <option selected="selected">Choisir</option
+                    <option value="Homme">Homme</option>
+                    <option value="Femme">Femme</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div id="slidegalerie" class="row">
+      <div class="presentation">
+          <div class="partie">
+            <h2>Galerie photo</h2>
+
+            <p>
+              Voila une galerie photos composée de ligne de 3 photos. La galerie est totalement responsive et propose une description de l'image ainsi qu'un effet au survol.
+            </p>
+            <h3>
+              Html
+            </h3>
+<pre>
+  <code data-language="html">
+  <div class="galerie">
+    <div class="element">
+      <img src="src/img/gallery.jpg">
+      <p>Description</p>
+    </div>
+    <div class="element">
+      <img src="src/img/gallery.jpg">
+      <p>Description</p>
+    </div>
+    <div class="element">
+      <img src="src/img/gallery.jpg">
+      <p>Description</p>
+    </div>
+  </div>
+  </code>
+</pre>
+            <h3>
+              Exemple
+            </h3>
+            <div class="galerie">
+              <div class="element">
+                <img src="src/img/gallery.jpg">
+                <p>Description</p>
+              </div>
+              <div class="element">
+                <img src="src/img/gallery.jpg">
+                <p>Description</p>
+              </div>
+              <div class="element">
+                <img src="src/img/gallery.jpg">
+                <p>Description</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="slideban" class="row bg-grey">
+        <div class="presentation">
+          <div class="partie">
+            <h2>Banniere</h2>
+            <p>
+              Voila une bannière qui couvre toute la largeur de l'ecran.
+            </p>
+
+            <h3>
+              Html
+            </h3>
+<pre>
+  <code data-language="html">
+  <div class="ban">
+    <div class="title">
+      Votre titre
+      <div class="description">
+        Une petite description.
+      </div>
+    </div>
+  </div>
+  </code>
+</pre>
+          <h3>
+            Exemple
+          </h3>
+          <div class="banex">
+            <div class="title">
+              Votre titre
+              <div class="description">
+                Une petite description.
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="slidemenu" class="row">
+        <div class="presentation">
+          <div class="partie">
+            <h2>Menu</h2>
+            <p>
+              Voici un menu responsive avec 2 niveaux possibles.
+            </p>
+<p>
+              Il ne faut pas oublier d'insérer cette ligne afin d'avoir le "hamburger" pour la version mobile.
+            </p>
+<pre>
+  <code data-language="html">
+    <script src="https://use.fontawesome.com/d930a4dafe.js"></script>
+ </code>
+</pre>
+            <h3>
+              Html
+            </h3>
+<pre>
+  <code data-language="html">
+  <div class="menuex">
+    <label for="show-menu" class="show-menu "><i class="fa fa-bars" aria-hidden="true"></i></label>
+    <input type="checkbox" id="show-menu" role="button">
+    <ul id="menu">
+      <div class="logo">
+        <li><a href="#">Nom</a></li>
+      </div>
+      <div class="items">
+        <li>
+          <a href="#">A propos</a>
+          <ul class="dropdown">
+            <li><a href="#">Moi</a></li>
+            <li><a href="#">L'entreprise</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+          <ul class="dropdown">
+            <li><a href="#">Mes</a></li>
+            <li><a href="#">Projets</a></li>
+            <li><a href="#">Personels</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </div>
+    </ul>
+  </div>
+  </code>
+</pre>
+          <h3>
+            Exemple
+          </h3>
+
+          <p>
+            Vous pouvez le voir sur cette page car c'est ce menu qui est utilisé.
+          </p>
+          </div>
+        </div>
+      </div>
+      <div id="slidepagination" class="row bg-grey">
+        <div class="presentation">
+          <div class="partie">
+            <h2>Pagination</h2>
+            <p>
+              La pagination permet à l'utilisateur de se retrouver parmis les pages de votre site.
+            </p>
+
+            <h3>
+              Html
+            </h3>
+<pre>
+  <code data-language="html">
+  <ul class="liste-page">
+    <li><a href="#"><<</a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">>></a></li>
+  </ul>
+  </code>
+</pre>
+            <h3>
+              Exemple
+            </h3>
+            <ul class="liste-page">
+              <li><a href="#"><<</a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">>></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="slidetableau" class="row">
+        <div class="presentation">
+          <div class="partie">
+            <h2>Tableau</h2>
+
+            <p>
+              Voici le tableau du framework. Il faut faire attention à bien respecter la structure du tableau afin de conserver l'aspect responsive de celui-ci.
+            </p>
+
+            <h3>
+              Html
+            </h3>
+<pre>
+  <code data-language="html">
+  <table>
+    <caption>Titre du tableau</caption>
+    <thead>
+      <tr>
+        <th scope="title">Nom</th>
+        <th scope="title">Prenom</th>
+        <th scope="title">Age</th>
+        <th scope="title">Sexe</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Nom">Dubois</td>
+        <td data-label="Prenom">Morgan</td>
+        <td data-label="Age">21</td>
+        <td data-label="Sexe">Homme</td>
+      </tr>
+      <tr>
+        <td data-label="Nom">Dupont</td>
+        <td data-label="Prenom">Maxime</td>
+        <td data-label="Age">54</td>
+        <td data-label="Sexe">Homme</td>
+      </tr>
+      <tr>
+        <td data-label="Nom">Ho</td>
+        <td data-label="Prenom">Adrianna</td>
+        <td data-label="Age">24</td>
+        <td data-label="Sexe">Femme</td>
+      </tr>
+      <tr>
+        <td data-label="Nom">Dua</td>
+        <td data-label="Prenom">Lipa</td>
+        <td data-label="Age">23</td>
+        <td data-label="Sexe">Femme</td>
+      </tr>
+    </tbody>
+  </table>
+  </code>
+</pre>
+              <h3>
+                Exemple
+              </h3>
+              <table>
+                <caption>Titre du tableau</caption>
+                <thead>
+                  <tr>
+                    <th scope="title">Nom</th>
+                    <th scope="title">Prenom</th>
+                    <th scope="title">Age</th>
+                    <th scope="title">Sexe</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Nom">Dubois</td>
+                    <td data-label="Prenom">Morgan</td>
+                    <td data-label="Age">21</td>
+                    <td data-label="Sexe">Homme</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Nom">Dupont</td>
+                    <td data-label="Prenom">Maxime</td>
+                    <td data-label="Age">54</td>
+                    <td data-label="Sexe">Homme</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Nom">Ho</td>
+                    <td data-label="Prenom">Adrianna</td>
+                    <td data-label="Age">24</td>
+                    <td data-label="Sexe">Femme</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Nom">Dua</td>
+                    <td data-label="Prenom">Lipa</td>
+                    <td data-label="Age">23</td>
+                    <td data-label="Sexe">Femme</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+      <div id="slidetypo" class="row bg-grey">
+        <div class="presentation">
+          <div class="partie">
+            <h2>Typographie</h2>
+            <p>
+              Il ne faut pas oublier d'insérer cette ligne afin d'avoir les polices du framework.
+            </p>
+<pre>
+  <code data-language="html">
+  <link href="https://fonts.googleapis.com/css?family=Asap|Cabin+Condensed|Didact+Gothic|Monoton|Open+Sans|Quicksand|Roboto|Ubuntu" rel="stylesheet">
+  </code>
+</pre>
+            <h3>
+              Html
+            </h3>
+
+
+<pre>
+  <code data-language="html">
+  <div class="open">
+    Voici la police d'ecriture open sans.
+  </div>
+  </code>
+</pre>
+<h3>
+              Exemple
+            </h3>
+
+<div class="open">
+            Voici la police d'ecriture open sans.
+          </div>
+
+          <h3>
+              Html
+            </h3>
+
+<pre>
+  <code data-language="html">
+  <div class="ubuntu">
+    Voici la police d'ecriture ubuntu.
+  </div>
+  </code>
+</pre>
+<h3>
+              Exemple
+            </h3>
+
+<div class="ubuntu">
+            Voici la police d'ecriture ubuntu.
+          </div>
+<h3>
+              Html
+            </h3>
+<pre>
+  <code data-language="html">
+  <div class="quicksand">
+    Voici la police d'ecriture quicksand.
+  </div>
+  </code>
+</pre>   <h3>
+              Exemple
+            </h3>
+ <div class="quicksand">
+            Voici la police d'ecriture quicksand.
+          </div>
+<h3>
+              Html
+            </h3>
+<pre>
+  <code data-language="html">
+  <div class="asap">
+    Voici la police d'ecriture asap.
+  </div>
+  </code>
+</pre>  <h3>
+              Exemple
+            </h3>
+  <div class="asap">
+            Voici la police d'ecriture asap.
+          </div>
+<h3>
+              Html
+            </h3>
+<pre>
+  <code data-language="html">
+  <div class="didact">
+    Voici la police d'ecriture didact.
+  </div>
+  </code>
+</pre>  <h3>
+              Exemple
+            </h3>
+  <div class="didact">
+            Voici la police d'ecriture didact.
+          </div>
+<h3>
+              Html
+            </h3>
+<pre>
+  <code data-language="html">
+  <div class="monoton">
+    Voici la police d'ecriture monoton.
+  </div>
+  </code>
+</pre>  <h3>
+              Exemple
+            </h3>
+  <div class="monoton">
+            Voici la police d'ecriture monoton.
+          </div>
+<h3>
+              Html
+            </h3>
+<pre>
+  <code data-language="html">
+  <div class="cabin">
+    Voici la police d'ecriture cabin.
+  </div>
+  </code>
+</pre>  <h3>
+              Exemple
+            </h3>
+  <div class="cabin">
+            Voici la police d'ecriture cabin.
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+    <footer>
+  <p>
+    Build with DBSASS Framework.
+  </p>
+</footer>
+  <script src="src/js/highlight.min.js"></script>
+  <script src="src/js/jquery.min.js"></script>
+  <script src="src/js/scroll.min.js"></script>
+</html>
