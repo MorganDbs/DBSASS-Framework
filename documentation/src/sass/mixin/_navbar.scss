@@ -1,4 +1,4 @@
-@mixin navbar($position: fixed, $height: 50px, $width: 100%, $bg: black, $buttonwidth: 140px, $color: #fff, $colorhover: black, $bghover: white, $time: 0.35s, $dropdownbg: black, $dropdowncolor: white) {
+@mixin navbar($position: fixed, $height: 50px, $width: 100%, $bg: black, $buttonwidth: 140px, $color: #fff, $colorhover: black, $bghover: white, $time: 0.35s, $dropdownbg: #2f2f2f, $dropdowncolor: white) {
     ul {
         z-index: 99999;
         list-style-type: none;
@@ -129,7 +129,7 @@
     input[type=checkbox] {
         display: none;
 
-        &:checked ~ .test {
+        &:checked ~ #menu {
             display: block;
         }
     }
@@ -150,6 +150,7 @@
             }
 
             .items {
+                margin-right: 0;
                 float: none;
 
                 li {

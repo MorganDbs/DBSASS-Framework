@@ -114,11 +114,11 @@ body {
         left: auto; }
         .menu ul .items li:hover ul a {
           box-sizing: border-box;
-          background: black;
+          background: #2f2f2f;
           color: white;
           height: 40px;
           line-height: 40px;
-          border: 1px solid black; }
+          border: 1px solid #2f2f2f; }
           .menu ul .items li:hover ul a:hover {
             background-color: white;
             color: black; }
@@ -148,7 +148,7 @@ body {
   height: 40px; }
 .menu input[type=checkbox] {
   display: none; }
-  .menu input[type=checkbox]:checked ~ .test {
+  .menu input[type=checkbox]:checked ~ #menu {
     display: block; }
 @media screen and (max-width: 760px) {
   .menu .fa-bars {
@@ -161,6 +161,7 @@ body {
     .menu ul .logo {
       display: none; }
     .menu ul .items {
+      margin-right: 0;
       float: none; }
       .menu ul .items li a {
         width: 100%; }
