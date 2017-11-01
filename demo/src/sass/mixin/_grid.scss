@@ -1,0 +1,45 @@
+@mixin row(){
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    word-break: break-word;
+}
+
+@mixin col($col: 3, $mobile: "l", $larg: 12, $gap: 1em) {
+    padding-left: $gap;
+    padding-right: $gap;
+    @media only screen and (min-width: 1024px) {
+        box-sizing: border-box;
+        flex-basis: percentage($col / $larg);
+    }
+
+    @media only screen and (max-width: 634px) {
+        flex-basis: 100%;
+    }
+
+    @media only screen and (max-width: 1024px) and (min-width: 634px) {
+        box-sizing: border-box;
+        @if $mobile == "m" {
+            flex-basis: 50%;
+        }
+        @else {
+            flex-basis: 100%;
+        }
+    }
+}
+
+@mixin offsetleft($offl: 0) {
+    margin-left: percentage($offl / 12);
+
+    @media only screen and (max-width: 1024px) {
+        margin-left: 0;
+    }
+}
+
+@mixin offsetright($offr: 0) {
+    margin-right: percentage($offr / 12);
+
+    @media only screen and (max-width: 1024px) {
+        margin-right: 0;
+    }
+}
