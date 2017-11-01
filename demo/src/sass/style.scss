@@ -10,7 +10,7 @@
 @import "../sass/mixin/_typography.scss";
 
 body {
-    @include font('Open sans', sans-serif);
+    @include font("Open sans", sans-serif);
 
     margin: 0;
 
@@ -36,9 +36,11 @@ body {
         }
     }
 }
-.bloc{
+
+.bloc {
     margin-top: 50px;
 }
+
 .row {
     margin-bottom: 60px;
 
@@ -70,6 +72,22 @@ body {
         @include col(8);
         @include offsetleft(2);
         @include offsetright(2);
+    }
+}
+
+.btn-pre {
+    button {
+        @include btnstruct(18px, 2.5, 400, 0.5em 2em);
+
+        margin-bottom: 10px;
+    }
+
+    .btn-red {
+        @include btncolor(#F03434);
+    }
+
+    .btn-blue {
+        @include btncolor(#446CB3);
     }
 }
 
@@ -131,31 +149,32 @@ body {
 
 table {
     @include table;
+
     margin-bottom: 30px;
 }
 
 .open {
-    @include font('Open Sans', sans-serif);
+    @include font("Open Sans", sans-serif);
 }
 
 .ubuntu {
-    @include font('Ubuntu', sans-serif);
+    @include font("Ubuntu", sans-serif);
 }
 
 .quicksand {
-    @include font('Quicksand', sans-serif);
+    @include font("Quicksand", sans-serif);
 }
 
 .asap {
-    @include font('Asap', sans-serif);
+    @include font("Asap", sans-serif);
 }
 
 .monoton {
-    @include font('Monoton', cursive);
+    @include font("Monoton", cursive);
 }
 
 .cabin {
-    @include font('Cabin Condensed', sans-serif);
+    @include font("Cabin Condensed", sans-serif);
 }
 
 .col-l-1, .col-l-3, .col-l-5, .col-m-1, .col-m-3, .col-m-5 {
@@ -175,13 +194,13 @@ table {
     padding: 1em;
 }
 
-.col-l-10, .col-l-8, .col-m-10, .col-m-8 , .blue{
+.col-l-10, .col-l-8, .col-m-10, .col-m-8, .blue {
     background-color: #264653;
     color: white;
     padding: 1em;
 }
 
-.justify{
+.justify {
     text-align: justify;
 }
 
@@ -189,9 +208,19 @@ table {
     background-color: #f6f6f6;
 }
 
-footer{
-    p{
+footer, .foot-ind {
+    p {
         text-align: center;
         margin-top: -40px;
     }
+}
+
+.foot-ind {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.center {
+    text-align: center;
 }

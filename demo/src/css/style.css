@@ -684,6 +684,44 @@ body {
       .row .presentation {
         margin-right: 0; } }
 
+.btn-pre button {
+  width: auto;
+  cursor: pointer;
+  overflow: hidden;
+  box-sizing: border-box;
+  line-height: 2.5;
+  font-weight: 400;
+  padding: 0.5em 2em;
+  margin-bottom: 10px; }
+  .btn-pre button a {
+    font-size: 18px; }
+.btn-pre .btn-red {
+  background-color: white;
+  border: 1px solid #F03434;
+  transition: background-color 0.35s ease; }
+  .btn-pre .btn-red a {
+    color: #F03434;
+    line-height: 0px;
+    text-decoration: none; }
+  .btn-pre .btn-red:hover {
+    background-color: #F03434;
+    border: 1px solid #F03434; }
+    .btn-pre .btn-red:hover a {
+      color: white; }
+.btn-pre .btn-blue {
+  background-color: white;
+  border: 1px solid #446CB3;
+  transition: background-color 0.35s ease; }
+  .btn-pre .btn-blue a {
+    color: #446CB3;
+    line-height: 0px;
+    text-decoration: none; }
+  .btn-pre .btn-blue:hover {
+    background-color: #446CB3;
+    border: 1px solid #446CB3; }
+    .btn-pre .btn-blue:hover a {
+      color: white; }
+
 .btn button {
   width: auto;
   cursor: pointer;
@@ -973,8 +1011,16 @@ table {
 .bg-grey {
   background-color: #f6f6f6; }
 
-footer p {
+footer p, .foot-ind p {
   text-align: center;
   margin-top: -40px; }
+
+.foot-ind {
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+
+.center {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
