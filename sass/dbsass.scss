@@ -1,0 +1,128 @@
+@import "../sass/mixin/_grid.scss";
+@import "../sass/mixin/_btn.scss";
+@import "../sass/mixin/_breadcrumb.scss";
+@import "../sass/mixin/_navbar.scss";
+@import "../sass/mixin/_pagination.scss";
+@import "../sass/mixin/_gallery.scss";
+@import "../sass/mixin/_table.scss";
+@import "../sass/mixin/_header.scss";
+@import "../sass/mixin/_form.scss";
+@import "../sass/mixin/_typography.scss";
+
+body {
+    @include font("Open sans", sans-serif);
+    margin: 0;
+    @include title;
+}
+
+.ban {
+    @include header;
+}
+
+.menu {
+    @include navbar;
+}
+
+.row {
+    @include row;
+
+    @for $i from 1 through 12 {
+        .col-m-#{$i} {
+            @include col($i, "m");
+        }
+
+        .col-l-#{$i} {
+            @include col($i, "l");
+        }
+    }
+
+    @for $i from 1 through 12 {
+        .offl-#{$i} {
+            @include offsetleft($i);
+        }
+    }
+
+    @for $i from 1 through 12 {
+        .offr-#{$i} {
+            @include offsetright($i);
+        }
+    }
+}
+
+.btn {
+    button {
+        @include btnstruct;
+    }
+
+    .btn-default {
+        @include btncolor(#1F1F1F);
+    }
+
+    .disabled {
+        @include disabled;
+    }
+
+    .btn-red {
+        @include btncolor(#F03434);
+    }
+
+    .btn-blue {
+        @include btncolor(#446CB3);
+    }
+
+    .btn-green {
+        @include btncolor(#3FC380);
+    }
+
+    .btn-purple {
+        @include btncolor(#947CB0);
+    }
+
+    .btn-orange {
+        @include btncolor(#EF4836);
+    }
+}
+
+.form {
+    @include form;
+}
+
+.galerie {
+    @include gallery;
+}
+
+.breadcrumb {
+    @include breadcrumb;
+}
+
+.liste-page {
+    @include pagination;
+}
+
+table {
+    @include table;
+}
+
+.open {
+    @include font("Open Sans", sans-serif);
+}
+
+.ubuntu {
+    @include font("Ubuntu", sans-serif);
+}
+
+.quicksand {
+    @include font("Quicksand", sans-serif);
+}
+
+.asap {
+    @include font("Asap", sans-serif);
+}
+
+.monoton {
+    @include font("Monoton", cursive);
+}
+
+.cabin {
+    @include font("Cabin Condensed", sans-serif);
+}
