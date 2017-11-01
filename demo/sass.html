@@ -54,6 +54,11 @@
         <div class="description">
           Voici la documentation pour la version sass du framework DBSASS.
         </div>
+        <div class="btn-pre">
+              <button class="btn-default">
+              <a href="css.html">Télécharger la version SASS</a>
+              </button>
+            </div>
       </div>
     </div>
   </header>
@@ -372,7 +377,7 @@
     }
 
     .btn-style {
-      @include btncolor($couleur, $temps);
+      @include btncolor($couleur, $couleur_survole, $temps);
     }
   }
   </code>
@@ -391,6 +396,12 @@
               <td data-label="Variable">$couleur</td>
               <td data-label="Description">Couleur du bouton</td>
               <td data-label="Valeur défaut">#4183D7</td>
+              <td data-label="Valeurs possibles">Une couleur</td>
+            </tr>
+            <tr>
+              <td data-label="Variable">$couleur_survole</td>
+              <td data-label="Description">Couleur du texte au survole</td>
+              <td data-label="Valeur défaut">white</td>
               <td data-label="Valeurs possibles">Une couleur</td>
             </tr>
             <tr>
@@ -738,6 +749,14 @@
           <div class="partie">
             <h2>Menu</h2>
             <p>Voici un menu responsive avec 2 niveaux possibles.</p>
+            <p>
+              Il ne faut pas oublier d'insérer cette ligne afin d'avoir le "hamburger" pour la version mobile.
+            </p>
+<pre>
+  <code data-language="html">
+    <script src="https://use.fontawesome.com/d930a4dafe.js"></script>
+ </code>
+</pre>
               <h3>Importation du mixin</h3>
 <pre>
   <code data-language="scss">
@@ -1083,6 +1102,14 @@
         <div class="presentation">
           <div class="partie">
             <h2>Typographie</h2>
+            <p>
+              Il ne faut pas oublier d'insérer cette ligne afin d'avoir les polices du framework.
+            </p>
+<pre>
+  <code data-language="html">
+  <link href="https://fonts.googleapis.com/css?family=Asap|Cabin+Condensed|Didact+Gothic|Monoton|Open+Sans|Quicksand|Roboto|Ubuntu" rel="stylesheet">
+  </code>
+</pre>
               <h3>Importation du mixin</h3>
 <pre>
   <code data-language="scss">

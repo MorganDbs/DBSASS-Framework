@@ -696,7 +696,7 @@ body {
   .btn-pre button a {
     font-size: 18px; }
 .btn-pre .btn-red {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid #F03434;
   transition: background-color 0.35s ease; }
   .btn-pre .btn-red a {
@@ -709,7 +709,7 @@ body {
     .btn-pre .btn-red:hover a {
       color: white; }
 .btn-pre .btn-blue {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid #446CB3;
   transition: background-color 0.35s ease; }
   .btn-pre .btn-blue a {
@@ -721,6 +721,19 @@ body {
     border: 1px solid #446CB3; }
     .btn-pre .btn-blue:hover a {
       color: white; }
+.btn-pre .btn-default {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  transition: background-color 0.35s ease; }
+  .btn-pre .btn-default a {
+    color: white;
+    line-height: 0px;
+    text-decoration: none; }
+  .btn-pre .btn-default:hover {
+    background-color: white;
+    border: 1px solid white; }
+    .btn-pre .btn-default:hover a {
+      color: black; }
 
 .btn button {
   width: auto;
@@ -734,7 +747,7 @@ body {
   .btn button a {
     font-size: 13px; }
 .btn .btn-default {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid #1F1F1F;
   transition: background-color 0.35s ease; }
   .btn .btn-default a {
@@ -751,7 +764,7 @@ body {
   .btn .disabled a {
     cursor: not-allowed; }
 .btn .btn-red {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid #F03434;
   transition: background-color 0.35s ease; }
   .btn .btn-red a {
@@ -764,7 +777,7 @@ body {
     .btn .btn-red:hover a {
       color: white; }
 .btn .btn-blue {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid #446CB3;
   transition: background-color 0.35s ease; }
   .btn .btn-blue a {
@@ -777,7 +790,7 @@ body {
     .btn .btn-blue:hover a {
       color: white; }
 .btn .btn-green {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid #3FC380;
   transition: background-color 0.35s ease; }
   .btn .btn-green a {
@@ -790,7 +803,7 @@ body {
     .btn .btn-green:hover a {
       color: white; }
 .btn .btn-purple {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid #947CB0;
   transition: background-color 0.35s ease; }
   .btn .btn-purple a {
@@ -803,7 +816,7 @@ body {
     .btn .btn-purple:hover a {
       color: white; }
 .btn .btn-orange {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid #EF4836;
   transition: background-color 0.35s ease; }
   .btn .btn-orange a {

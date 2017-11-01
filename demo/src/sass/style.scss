@@ -89,6 +89,10 @@ body {
     .btn-blue {
         @include btncolor(#446CB3);
     }
+
+    .btn-default {
+        @include btncolor(white, black, 0.35s);
+    }
 }
 
 .btn {

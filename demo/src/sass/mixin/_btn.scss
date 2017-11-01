@@ -12,8 +12,8 @@
     }
 }
 
-@mixin btncolor($bgcolor: #4183D7, $time: 0.35s) {
-    background-color: white;
+@mixin btncolor($bgcolor: #4183D7, $colorhover:white, $time: 0.35s) {
+    background-color: rgba(0, 0, 0, 0);
     border: 1px solid $bgcolor;
     transition: background-color $time ease;
 
@@ -28,7 +28,7 @@
         border: 1px solid $bgcolor;
 
         a {
-            color: white;
+            color: $colorhover;
         }
     }
 }
