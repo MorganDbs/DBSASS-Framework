@@ -205,7 +205,7 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  word-break: break-word; }
+  word-break: break-all; }
   .row .col-m-1 {
     padding-left: 1em;
     padding-right: 1em; }

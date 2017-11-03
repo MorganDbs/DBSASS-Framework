@@ -2,7 +2,7 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    word-break: break-word;
+    word-break: break-all;
 }
 
 @mixin col($col: 3, $mobile: "l", $larg: 12, $gap: 1em) {
