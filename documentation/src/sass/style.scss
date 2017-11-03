@@ -212,7 +212,7 @@ table {
     background-color: #f6f6f6;
 }
 
-footer, .foot-ind {
+footer{
     p {
         text-align: center;
         margin-top: -40px;
@@ -220,11 +220,28 @@ footer, .foot-ind {
 }
 
 .foot-ind {
-    position: fixed;
     bottom: 0;
     width: 100%;
+    text-align: center;
+    p{
+        margin-top: 0;
+    }
 }
 
 .center {
     text-align: center;
+}
+
+@media (max-width: 634px) {
+    .btn-pre{
+        margin-top: 30px;
+    }
+}
+
+.decouvrir{
+    margin-top: 80px;
+}
+
+.row.ind{
+    margin-bottom: 0;
 }
