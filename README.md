@@ -21,7 +21,7 @@ Pour la version css
 
 * [Version css](https://github.com/MorganDbs/DBSASS-Framework/blob/master/dbsass-css-version.zip)
 
-Ne pas oubliez le lien vers le fichier css.
+Ne pas oublier le lien vers le fichier css.
 ```
 <link rel="stylesheet" type="text/css" href="chemin/vers/le/fichier/dbsass.min.css">
 ```
